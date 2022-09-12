@@ -1,0 +1,54 @@
+body{
+    height: 100%; 
+    /*background: rgb(196, 196, 196);*/
+    background-image: linear-gradient(to bottom right, gray, whitesmoke);
+}
+
+.h1{
+    color: rgb(56, 56, 56);
+}
+
+.nav1{
+    background-color: rgba(255,255,255,0);
+    border-radius: 13px;
+    color: rgb(31, 31, 31); 
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+.search{
+    background-color: rgb(214, 214, 214);
+    color: floralwhite;
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+.container{
+    width: 60%;
+}
+
+.reset{
+    background-color: rgb(170, 170, 170);
+}
+
+.footer{
+    /*background: rgba(167, 167, 167, 0.5);*/
+     background-image: linear-gradient(to bottom right, whitesmoke, darkgrey);
+}
+
+.links{
+    background: black;
+    color: whitesmoke;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.links:hover{
+    background-color:rgb(110, 110, 110);
+    color: whitesmoke;
+}

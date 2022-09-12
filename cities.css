@@ -1,0 +1,193 @@
+body{
+  background-color: #e6e6e6;
+  height: 100%;
+}
+
+.bg-img-spiti{
+  /* The image used */
+  background: url("https://www.spitiholidayadventure.com/storage/5970aa504f376.jpg");
+  min-height: 400px;
+  width:100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin:0;
+
+}
+
+.bg-img-ooty{
+  /* The image used */
+  background: url("https://images.unsplash.com/photo-1593626543312-a14b7d34403b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80");
+  min-height: 450px;
+  width:100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin:0;
+
+}
+
+.bg-img-hyderabad{
+  /* The image used */
+  background: url("https://images.unsplash.com/photo-1612972099619-9b328dee5803?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=888&q=80");
+  min-height: 550px;
+  width:100%;
+
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin:0;
+
+}
+
+.caption-hy h1 {
+  font-weight: 700;
+  color: rgb(36, 31, 27);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.caption-hy h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(36, 31, 27);
+  line-height: 1.5;
+}
+
+.bg-img-mumbai{
+  /* The image used */
+  background: url("https://images.unsplash.com/photo-1573132223210-d65883b944aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1029&q=80");
+  min-height: 500px;
+  width:100%;
+
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin:0;
+
+}
+.caption h1 {
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.caption h4 {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+}
+
+.overview{
+  text-align: center;
+      color: #333333;
+    font-weight: 300;
+    font-size: 19px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  background-color: #1f4099;
+  padding: 5px;
+  margin-bottom: 65px;
+}
+
+.grid-container > div {
+  background-color: rgba(240, 240, 240, 0.8);
+  text-align: center;
+  padding: 50px 0;
+  font-size: 30px;
+  padding-inline: 50px;
+  
+}
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item2{
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.item2 p{
+  color: #0084ff;
+  padding: 10px;
+  text-align: left;
+  font-size: 1.5vw;}
+
+.get_in_touch {
+  margin-top: 10px;
+  margin: auto;
+  width: 60%;
+  height: 200px;
+  border: 3px solid #1f4099;
+  padding: 10px;
+  position: relative;
+}
+
+
+.details{
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 800px) {
+  .btn{
+    background-color: #1f4099;
+    border: none;
+    color: #1f4099;
+    padding: 8px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: center;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: right;
+
+  }
+
+  .get_in_touch {
+    margin-top: 10px;
+    margin: auto;
+    width: 60%;
+    height: 300px;
+    border: 3px solid #1f4099;
+    padding: 10px;
+    position: relative;
+  }
+}
+
+
+

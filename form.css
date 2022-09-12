@@ -1,0 +1,44 @@
+body{
+    height: 100%; 
+    background: rgb(228, 229, 255);
+}
+
+.h1{
+    color: rgb(0, 12, 180);
+}
+
+.navbar{
+    background-color: rgba(255,255,255,0);
+    border-radius: 13px;
+    color: rgb(1, 5, 59); 
+}
+
+.search{
+    background-color: rgb(0, 12, 180);
+    color: floralwhite;
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+.container{
+    width: 60%;
+}
+
+.footer{
+    background: rgba(99, 109, 255,0.5);
+}
+
+.links{
+    background: rgb(5, 14, 141);
+    color: cornsilk;
+    width: 100px;
+    transition: 0.6s;
+}
+
+.links:hover{
+    background-color:rgb(0, 6, 92);
+    color: floralwhite;
+}

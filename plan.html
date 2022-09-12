@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>     
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400;0,600;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="form.css">  
+    <link rel="stylesheet" href="footer.css">  
+
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg px-3 py-2 m-2">
+    <a class="navbar-brand" href="#">UBP Hotels</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline my-2 my-lg-0 mx-2">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-default n-button my-2 my-sm-0 search" type="submit">Search</button>
+      </form>
+  </nav>
+      <h1 class="m-5 h1">Plan your Vacation</h1>
+      <div class="container">
+        <form action="#" id="form" method="POST" name="myForm" onsubmit="validateForm()">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" id="fname" placeholder="First Name">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" id="lname" placeholder="Last Name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control email" id="inputEmail4" placeholder="Email" name="email">
+              </div>
+
+              <div class="col-md-6">
+                <label class="mb-3 ml-1">Gender</label><br>
+                <div class="form-check form-check-inline ml-1">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="male">
+                  <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+
+                <div class="form-check form-check-inline ml-1">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="female">
+                  <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+
+                <div class="form-check form-check-inline ml-1">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="other">
+                  <label class="form-check-label" for="inlineRadio2">Other</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phoneno">Contact</label>
+              <input type="tel" class="form-control" id="phoneno" placeholder="9876543210" name="phone_number">
+            </div>
+
+            <div class="form-group">
+              <label for="mycity">City To Visit</label>
+              <select class="form-control" id="mycity" name="mycity">
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Ooty</option>
+                <option>Hyderabad</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="sdate">Start Date</label>
+                <input type="date" class="form-control" id="sdate" name="start_date">
+              </div>
+              
+              <div class="form-group col-md-6">
+                <label for="edate">End Date</label>
+                <input type="date" class="form-control" id="edate" name="end_date">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">Recieve emails</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="reset" class="btn btn-primary mx-3">Reset</button>
+        </form>
+      </div>
+
+      <footer class="footer-distributed">
+
+        <div class="footer-left">
+          <h3>About<span>UBP<span></h3>
+    
+          <p class="footer-links">
+            <a href="index.html">Home</a>
+            |
+            <a href="about.html">About</a>
+            |
+            <a href="#">Contact</a>
+          </p>
+    
+          <p class="footer-company-name">© 2021 UBP Travels Pvt. Ltd.</p>
+        </div>
+    
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+              <p><span>309 - Valley road,
+               Bldg. No. D - 1, Sector - 3</span>
+              Kaza, Spiti</p>
+          </div>
+    
+          <div>
+            <i class="fa fa-phone"></i>
+            <p class="p2">+91 22-27782183</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p class="p3"><a href="#">contact@ubp.com</a></p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
+            We offer a marvelous stay and a memorable experience with your friends and family at the best price. <br>
+          For more, Click Here <br>
+        <a href="about.html">About Us</a></p>
+    
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+      // function isDateSelected(){ 
+      //   var today =new Date();
+      //   var inputDate = new Date(document.interestForm.start_date.value);
+      //   if (inputDate.value == " "){
+      //       return false;
+      //   } else if (inputDate > today) {
+      //       return false;
+      //   } else {
+      //       return true;
+      //   }
+      // }
+
+      // if (isDateSelected() === false) {
+      //     alert("Please enter a valid birthday");
+      //     interestForm.bday.focus();
+      //     return false;
+      // } else {
+      //     return true;
+      // }
+
+      function isGenderSelected() {
+      var checkboxes = document.getElementsByName("radsex");
+
+      for (i=0 ; i < checkboxes.length ; i++ ) {
+          if ( checkboxes[i].checked ) { 
+              return true; 
+          }
+      }
+      return false;
+      }
+
+      if (isGenderSelected() == false) {
+            alert("Please select a gender.");
+            return false;
+      }
+
+      function validateForm() {
+        
+        var x = document.myForm.fname.value;
+        if (x == "") {
+          alert("First Name must not be empty");
+          return false;
+        }
+        var regex = /^[a-zA-Z]*$/;
+        if (!regex.test(x)) {
+  
+          alert("First Name must be only string");
+          return false;
+        }
+        var y = document.myForm.lname.value;
+        if (y == "") {
+          alert("Last Name must not be empty");
+          return false;
+        }
+        var regex = /^[a-zA-Z]*$/;
+        if (!regex.test(y)) {
+          
+          alert("Last Name must be only string");
+          return false;
+        }
+        var phone = document.forms["myForm"]["phone_number"].value;
+        if (phone == "") {
+          alert("phone no. must not be empty");
+  
+        }
+        let email = document.querySelector('input[type="email"]').value;
+        if (email == "") {
+          alert("Email must not be empty");
+        }
+
+        }
+    </script>
+  
+</body>
+</html>
